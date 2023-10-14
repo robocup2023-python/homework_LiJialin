@@ -4,7 +4,7 @@ import random
 class Universe():
   map = [[' ' for i in range(20)] for i in range(10)]
   def show(this):
-    print('显示地图')
+    # print('显示地图')
     for i in this.map:
       print(i)
 def mapReload():
@@ -42,7 +42,7 @@ def clock():
     mapReload()
     print()
     print('下一代',end='')
-    # u_main.show()
+    u_main.show()
     # 可选，每次打印世界状态
 class Cell():
   isAlive = bool
